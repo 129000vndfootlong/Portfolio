@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tran Le Son &amp; Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-top">
+    <img class="avatar" src="assets/profile.jpg" alt="Portrait of Son">
+    <div class="name">Tran Le Son</div>
+    <div class="role">&amp; Developer</div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home" class="nav-link active">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="sidebar-bottom">
+    <span class="status-dot"></span> Open to internship roles
+  </div>
+</nav>
+
+<button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+<main>
+
+  <section id="home" class="hero">
+    <p class="eyebrow-line">FPT University · Internship Program 2026</p>
+    <h1>I build the systems<br>under the interface.</h1>
+    <p class="hero-sub">Backend APIs, ML pipelines, and cloud deployments — from a Django capstone to a sentiment-analysis engine trained on 600k+ reviews.</p>
+    <a href="#projects" class="hero-cta">See the work</a>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm a student developer working across full stack web development, applied machine learning, and cloud infrastructure. My coursework spans a Django/React/MongoDB capstone, an IBM Full Stack Developer program, and an AI in Healthcare unit — which means most weeks I'm moving between REST endpoints, model training notebooks, and Kubernetes manifests.
+      </p>
+      <p class="about-text">
+        I like projects where the model or the API actually has to hold up under real data — not just pass a grader. SupportSense, my group's ticket-prioritization tool, is trained on over 600,000 labeled reviews; the sepsis-risk model I built has to reason under real clinical uncertainty. That's the kind of problem I keep coming back to.
+      </p>
+      <div class="about-facts">
+        <div class="fact"><span class="fact-label">Focus</span>Web &amp; ML systems</div>
+        <div class="fact"><span class="fact-label">Currently</span>Full Stack capstone</div>
+        <div class="fact"><span class="fact-label">Languages</span>English · Vietnamese</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="filter-row" id="filterRow">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="ml">Machine Learning</button>
+      <button class="filter-btn" data-filter="cloud">Cloud &amp; DevOps</button>
+    </div>
+    <div class="project-list" id="projectList"></div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <p>Python · JavaScript · SQL</p>
+      </div>
+      <div class="skill-group">
+        <h3>Web</h3>
+        <p>Django · React · Node.js / Express · MongoDB · REST APIs</p>
+      </div>
+      <div class="skill-group">
+        <h3>Machine Learning</h3>
+        <p>scikit-learn · TF-IDF · Bayesian networks (pgmpy) · pandas</p>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud &amp; DevOps</h3>
+        <p>Docker · Kubernetes · IBM Cloud · Git / GitHub</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <h2>Contact</h2>
+    <p class="about-text">Looking for an internship or collaboration on a full stack or ML project? Reach out below.</p>
+    <div class="contact-links">
+      <a href="mailto:your.email@example.com">your.email@example.com</a>
+      <a href="https://github.com/USERNAME" target="_blank" rel="noopener">github.com/USERNAME</a>
+      <a href="https://linkedin.com/in/USERNAME" target="_blank" rel="noopener">linkedin.com/in/USERNAME</a>
+    </div>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
